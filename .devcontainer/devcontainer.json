@@ -12,7 +12,12 @@
   },
   // Port 5683 udp is used by Shelly integration
   "appPort": ["8123:8123", "5683:5683/udp"],
-  "runArgs": ["-e", "GIT_EDITOR=code --wait"],
+  "runArgs": [
+    "-e",
+    "GIT_EDITOR=code --wait",
+    "--name",
+    "${localEnv:USER}-devcontainer-home-assistant-core"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -23,7 +28,10 @@
         "redhat.vscode-yaml",
         "esbenp.prettier-vscode",
         "GitHub.vscode-pull-request-github",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "ms-azuretools.vscode-docker",
+        "tht13.rst-vscode",
+        "tamasfe.even-better-toml"
       ],
       // Please keep this file in sync with settings in home-assistant/.vscode/settings.default.json
       "settings": {
