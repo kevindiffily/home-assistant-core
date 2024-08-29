@@ -30,7 +30,8 @@
         "GitHub.vscode-pull-request-github",
         "GitHub.copilot",
         "ms-azuretools.vscode-docker",
-        "tht13.rst-vscode"
+        "tht13.rst-vscode",
+        "tamasfe.even-better-toml"
       ],
       // Please keep this file in sync with settings in home-assistant/.vscode/settings.default.json
       "settings": {
